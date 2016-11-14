@@ -1,0 +1,9 @@
+require 'zlib'
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+
+#makes connection to our database
+ActiveRecord::Base.establish_connection(
+	:adapter =>'mysql2',
+	:database =>'catsrescue'
+	)
